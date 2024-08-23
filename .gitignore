@@ -1,0 +1,6 @@
+**/**/*.cpython-312.pyc
+ongaku_back/__pycache__/
+ongaku_back/tmp_extracted/
+ongaku_back/redis_data/
+tmp_extracted/
+redis_data/

@@ -1,0 +1,18 @@
+services:
+  ongaku_back:
+    container_name: ongaku_back
+    build:
+      context: ./ongaku_back
+    ports:
+      - 8300:8300
+    volumes:
+      - ./ongaku_back:/server
+  redis:
+    container_name: ongaku_redis
+    image: redis:latest
+    ports:
+      - 8301:8301
+    volumes:
+      - ./redis_data:/data
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
