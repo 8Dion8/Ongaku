@@ -147,7 +147,7 @@ class ZipParser:
         print(f"Countries:")
         for country, count in sorted_countries:
             print(f"    {country}: {count}")            
-
+    
 
 if __name__ == "__main__":
     parser = ZipParser()
